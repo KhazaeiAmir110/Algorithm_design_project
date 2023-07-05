@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path
 # from Api.views import dna_comparison
 from Api.viewsDNA import upload_files, compare_dna
+from Api import viewsHufman
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('u/', upload_files, name='upload_files'),
-    path('c/', compare_dna, name='compare_dna'),
+    path('upload-files//', upload_files, name='upload_files'),
+    path('compare-dna/', compare_dna, name='compare_dna'),
+    path('compress/', viewsHufman.compress_message, name='compress_message'),
+    path('decompress/<int:message_id>/', viewsHufman.decompress_message, name='decompress_message'),
 ]
