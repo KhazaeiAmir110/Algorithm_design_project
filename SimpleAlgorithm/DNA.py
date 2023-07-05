@@ -29,5 +29,5 @@ class DNAComparison:
 
 # مثال استفاده از کلاس
 
-dna_comparison = DNAComparison('dna_body.txt', 'dna_parents.txt', 'output.txt')
-dna_comparison.compare_dna()
+# dna_comparison = DNAComparison('SimpleAlgorithm/dna_body.txt', 'SimpleAlgorithm/dna_parents.txt', 'output.txt')
+# dna_comparison.compare_dna()
